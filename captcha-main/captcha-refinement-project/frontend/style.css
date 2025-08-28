@@ -1,0 +1,133 @@
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Main Container */
+.container {
+    text-align: center;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.container:hover {
+    transform: scale(1.05);
+}
+
+/* Title Styling */
+h1 {
+    font-size: 26px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Subtitle Styling */
+.subtitle {
+    font-size: 18px;
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* CAPTCHA Image Container */
+.captcha-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* CAPTCHA Image */
+#captchaImage {
+    border: 2px solid #ccc;
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Image Hover Effect */
+#captchaImage:hover {
+    transform: rotate(-2deg);
+}
+
+/* Buttons */
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Refresh Button */
+#refreshButton {
+    margin-left: 12px;
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+#refreshButton:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+}
+
+/* Input Field */
+input {
+    width: 80%;
+    padding: 12px;
+    margin-top: 15px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 16px;
+    transition: border 0.3s ease-in-out;
+}
+
+/* Input Focus Effect */
+input:focus {
+    border-color: #764ba2;
+    outline: none;
+    box-shadow: 0 4px 10px rgba(118, 75, 162, 0.3);
+}
+
+/* Submit Button */
+#submitButton {
+    background-color: #28a745;
+    color: white;
+    margin-top: 15px;
+    box-shadow: 0 4px 10px rgba(40, 167, 69, 0.2);
+}
+
+#submitButton:hover {
+    background-color: #218838;
+    box-shadow: 0 6px 15px rgba(40, 167, 69, 0.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,24 @@
+Flask==2.3.2
+Pillow
+numpy
+os
+
+python version >>>>3.8.10
+flask version  >>>>2.0.2
+pillow
+
+run command : 
+
+cd backend
+python app.py
+
+
+utils.py :  is a captcha generator (.pyc)
+app.py : is a main server python file
+train.py : will train the ML model to understand the logic behind the captcha and refine the captcha.(.h5)
+
+from flask import Flask, render_template, jsonify, request, send_file, send_from_directory
+from utils import generate_captcha_image
+import random
+import string
+import os
